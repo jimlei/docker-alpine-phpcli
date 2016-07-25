@@ -1,4 +1,4 @@
-FROM alpine:3.4.2
+FROM alpine:3.4
 MAINTAINER Jim Leirvik <jim@jimleirvik.no>
 
 ENV LANG="en_US.UTF-8" \
