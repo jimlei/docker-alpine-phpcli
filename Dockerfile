@@ -8,10 +8,10 @@ ENV LANG="en_US.UTF-8" \
 
 RUN apk -U upgrade && \
     apk --update add \
-    php-cli && \
+    php5-cli && \
     rm -rf /tmp/src && \
     rm -rf /var/cache/apk/* && \
-    echo "date.timezone = UTC" >> /etc/php/php.ini
+    echo "date.timezone = UTC" >> /etc/php5/php.ini
 
 RUN mkdir -p /data
 VOLUME /data
