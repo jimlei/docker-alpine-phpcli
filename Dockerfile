@@ -11,8 +11,11 @@ RUN apk -U upgrade && \
     php5-cli \
     php5-ctype \
     php5-dom \
+    php5-intl \
     php5-json \
-    php5-pdo && \
+    php5-pdo \
+    php5-pdo_mysql \
+    php5-pdo_pgsql && \
     rm -rf /tmp/src && \
     rm -rf /var/cache/apk/* && \
     echo "date.timezone = UTC" >> /etc/php5/php.ini
