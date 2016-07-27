@@ -10,6 +10,7 @@ RUN apk -U upgrade && \
     apk --update add \
     php5-cli \
     php5-ctype \
+    php5-dom \
     php5-json \
     php5-pdo && \
     rm -rf /tmp/src && \
